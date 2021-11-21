@@ -13,7 +13,7 @@ type = '/genre/movie/list'
 URL = url + type
 params = {'api_key': apiV3, 'language':"ko-KR"}
 res = requests.get(URL, params=params)
-# print(res.json())
+print(res.json())
 genre_list = res.json()['genres']
 final_list = []
 
